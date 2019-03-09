@@ -81,7 +81,7 @@ let adapter = soef.Adapter(
     onStateChange,
     onObjectChange,
     onUnload,
-    'js2fs'
+    'js2fs-community'
 );
 
 function onUnload(callback) {
