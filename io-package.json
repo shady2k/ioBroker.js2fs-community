@@ -1,6 +1,6 @@
 {
     "common": {
-        "name": "js2fs",
+        "name": "js2fs-community",
         "version": "0.1.6",
         "title": "Javascript to file",
         "desc": "Javascript to file",
