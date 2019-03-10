@@ -14,6 +14,9 @@ This adapter allows you to edit your ioBroker javascript files with your preferr
 - This is a pre-release and only for test purposes
 - Currently debugging is restricted
 
+### Initial Creation
+This adapter was initialy created by @soef at https://github.com/soef/iobroker.js2fs but not maintained any more, so we moved it to iobroker-community so that bugs could be fixed. thanks @soef for his work.
+
 ### Benefits
 - use your preferred environment ide
 - debugging
