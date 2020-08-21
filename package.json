@@ -1,19 +1,91 @@
 {
-  "name": "iobroker.js2fs-community",
-  "version": "0.1.6",
-  "description": "ioBroker Javascript to file",
+  "_from": "https://github.com/shady2k/ioBroker.js2fs-community/tarball/c0ca06045d61ad38ac925c8ab4ffa43ce081a0ab",
+  "_id": "iobroker.js2fs-community@0.1.6",
+  "_inBundle": false,
+  "_integrity": "sha512-o+6WpMYIyABm9gKZgGE6crXRTqNHJtxixH+BiTd0y9dqIv8SZn01dgkAnGx59NzRfLU17004s/X9VR38dUsYrw==",
+  "_location": "/iobroker.js2fs-community",
+  "_phantomChildren": {
+    "arr-flatten": "1.1.0",
+    "assign-symbols": "1.0.0",
+    "async-each": "1.0.3",
+    "bindings": "1.5.0",
+    "debug": "2.6.9",
+    "expand-range": "1.8.2",
+    "filename-regex": "2.0.1",
+    "fragment-cache": "0.2.1",
+    "graceful-fs": "4.2.3",
+    "inherits": "2.0.3",
+    "is-descriptor": "1.0.2",
+    "is-extendable": "0.1.1",
+    "is-plain-object": "2.0.4",
+    "is-posix-bracket": "0.1.1",
+    "isobject": "3.0.1",
+    "kind-of": "3.2.2",
+    "nan": "2.14.0",
+    "nanomatch": "1.2.13",
+    "object.omit": "2.0.1",
+    "object.pick": "1.3.0",
+    "parse-glob": "3.0.4",
+    "path-is-absolute": "1.0.1",
+    "posix-character-classes": "0.1.1",
+    "preserve": "0.2.0",
+    "readable-stream": "2.3.6",
+    "regex-cache": "0.4.4",
+    "regex-not": "1.0.2",
+    "remove-trailing-separator": "1.1.0",
+    "repeat-element": "1.1.3",
+    "repeat-string": "1.6.1",
+    "snapdragon": "0.8.2",
+    "snapdragon-node": "2.1.1",
+    "split-string": "3.1.0",
+    "to-regex": "3.0.2"
+  },
+  "_requested": {
+    "type": "remote",
+    "raw": "https://github.com/shady2k/ioBroker.js2fs-community/tarball/c0ca06045d61ad38ac925c8ab4ffa43ce081a0ab",
+    "rawSpec": "https://github.com/shady2k/ioBroker.js2fs-community/tarball/c0ca06045d61ad38ac925c8ab4ffa43ce081a0ab",
+    "saveSpec": "https://github.com/shady2k/ioBroker.js2fs-community/tarball/c0ca06045d61ad38ac925c8ab4ffa43ce081a0ab",
+    "fetchSpec": "https://github.com/shady2k/ioBroker.js2fs-community/tarball/c0ca06045d61ad38ac925c8ab4ffa43ce081a0ab"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://github.com/shady2k/ioBroker.js2fs-community/tarball/c0ca06045d61ad38ac925c8ab4ffa43ce081a0ab",
+  "_shasum": "b130ef6b978c0a380855f42a62cb7b2f1eb10277",
+  "_spec": "https://github.com/shady2k/ioBroker.js2fs-community/tarball/c0ca06045d61ad38ac925c8ab4ffa43ce081a0ab",
+  "_where": "/opt/iobroker",
   "author": {
     "name": "soef",
     "email": "soef@gmx.net"
   },
+  "bugs": {
+    "url": "https://github.com/soef/iobroker.js2fs/issues"
+  },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "soef",
       "email": "soef@gmx.net"
     }
   ],
+  "dependencies": {
+    "@iobroker/adapter-core": "^1.0.3",
+    "child_process": "^1.0.2",
+    "chokidar": "^1.7.0",
+    "path": "^0.12.7",
+    "soef": "^0.4.15"
+  },
+  "deprecated": false,
+  "description": "ioBroker Javascript to file",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "homepage": "https://github.com/soef/iobroker.js2fs",
-  "license": "MIT",
   "keywords": [
     "sync",
     "iobroker file",
@@ -24,30 +96,15 @@
     "editor",
     "ide"
   ],
-  "engines": {
-    "node": ">=4.0.0"
-  },
+  "license": "MIT",
+  "main": "js2fs-community.js",
+  "name": "iobroker.js2fs-community",
   "repository": {
     "type": "git",
-    "url": "https://github.com/soef/iobroker.js2fs"
+    "url": "git+https://github.com/soef/iobroker.js2fs.git"
   },
-  "dependencies": {
-    "child_process": "^1.0.2",
-    "path": "^0.12.7",
-    "soef": "^0.4.4",
-    "chokidar": "^1.7.0",
-    "@iobroker/adapter-core": "^1.0.3"
-  },
-  "devDependencies": {
-    "mocha": "^4.1.0",
-    "chai": "^4.1.2"
-  },
-  "main": "js2fs-community.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --exit"
   },
-  "bugs": {
-    "url": "https://github.com/soef/iobroker.js2fs/issues"
-  },
-  "readmeFilename": "README.md"
+  "version": "0.1.6"
 }

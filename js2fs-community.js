@@ -6,7 +6,7 @@
 "use strict";
 
 const
-    soef = require('soef'),
+    soef = require(`${__dirname}/lib/dontBeSoSoef`),
     path = require('path'),
     fs = require('fs'),
     chokidar = require('chokidar'),
@@ -76,12 +76,12 @@ Date.prototype.getUnixTime = Date.prototype.getCTime = function () {
     return toUnixTime(this.getTime());
 };
 
-let adapter = soef.Adapter(
+var adapter = soef.Adapter(
     main,
     onStateChange,
     onObjectChange,
     onUnload,
-    'js2fs-community'
+    { name: 'js2fs-community' }
 );
 
 function onUnload(callback) {
@@ -947,13 +947,16 @@ function main() {
 
     //soef.switchToDebug(true);
 
+    adapter.log.debug('normalizeConfig');
     normalizeConfig(adapter.config);
     if (!adapter.config.rootDir) return;
 
     //startJavascriptAdapterInDebugMode();
 
+    adapter.log.debug('rootDir');
     rootDir = adapter.config.rootDir;
 
+    adapter.log.debug('Before start');
     //checkJavascriptAdapter(function (runningPort) {
     scripts = Scripts();
     start();
